@@ -30,11 +30,15 @@ Ce système permet ainsi d’accélérer la prise de décision et la rédaction 
 # 🏗️ Architecture du Projet
 
 Le projet s’organise autour des fichiers principaux suivants :
-📦 CREWAI-Project
-┣ 📜 crew.py
-┣ 📜 agent.yaml
-┣ 📜 task.yaml
-┣ 📜 main.py
-┣ 📜 .env
-┗ 📁 knowledge/
-┗ 📜 Energiesrenouvelables.pd
+# CREWAI-Project
+
+```plaintext
+CREWAI-Project
+├── crew.py
+├── agent.yaml
+├── task.yaml
+├── main.py
+├── .env
+└── knowledge/
+    └── Energiesrenouvelables.pdf
+
