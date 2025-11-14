@@ -41,7 +41,6 @@ CREWAI-Project
 ├── .env
 └── knowledge/
     └── Energiesrenouvelables.pdf
-# 📦 CREWAI-Project
 
 ## ✔️ crew.py
 Définit la structure du projet via la classe `Monred` :  
@@ -80,7 +79,7 @@ Contient la configuration essentielle du projet :
 
 
 ---
-
+---
 # 🤖 Agents de la Crew
 
 ### 🔍 **search_agent**
