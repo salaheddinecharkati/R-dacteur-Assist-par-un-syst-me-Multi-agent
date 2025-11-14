@@ -31,19 +31,6 @@ Ce système permet ainsi d’accélérer la prise de décision et la rédaction 
 
 Le projet s’organise autour des fichiers principaux suivants :
 # CREWAI-Project
-
-```plaintext
-CREWAI-Project
-├── crew.py
-├── agent.yaml
-├── task.yaml
-├── main.py
-├── .env
-└── knowledge/
-    └── Energiesrenouvelables.pdf
-
----
-
 ## ✔️ crew.py
 Définit la structure du projet via la classe `Monred` :  
 - Configuration des agents  
