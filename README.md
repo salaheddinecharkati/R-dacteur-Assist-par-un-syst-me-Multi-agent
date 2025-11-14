@@ -79,3 +79,60 @@ Contient la configuration essentielle du projet :
 - `OPENAI_API_KEY` → clé pour les services OpenAI  
 
 
+---
+
+# 🤖 Agents de la Crew
+
+### 🔍 **search_agent**
+- Recherche des articles récents et pertinents  
+- Utilise SerperDevTool pour effectuer la recherche web  
+
+### 🧹 **scraper_agent**
+- Extrait et nettoie le contenu textuel à partir des URLs  
+
+### 📚 **pdf_linker_agent**
+- Analyse le PDF de référence  
+- Trouve les passages similaires aux articles collectés  
+
+### 📝 **summarizer_agent**
+- Produit un résumé structuré incluant :  
+  - Titre  
+  - Mots-clés  
+  - Extraits PDF pertinents  
+  - Liens vers les sources  
+
+---
+
+# 📋 Description des Tasks
+
+### 🔹 **Search_task**
+Recherche des articles récents et extrait les liens utiles.
+
+### 🔹 **Scraping_task**
+Récupère, nettoie et prépare le contenu textuel des articles.
+
+### 🔹 **Pdf_linking_task**
+Compare le contenu extrait avec le fichier PDF de référence pour repérer les correspondances.
+
+### 🔹 **Summary_task**
+Génère un résumé final structuré avec les éléments essentiels.
+
+---
+
+# 📤 Output
+
+Le système produit un fichier contenant :  
+- Un résumé clair  
+- Les mots-clés  
+- Les passages PDF pertinents  
+- Les liens vers les sources web
+
+---
+
+# 👤 Réalisé par
+
+**Salaheddine Charkati**
+
+---
+
+
