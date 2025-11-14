@@ -41,4 +41,41 @@ CREWAI-Project
 ├── .env
 └── knowledge/
     └── Energiesrenouvelables.pdf
+# 📦 CREWAI-Project
+
+## ✔️ crew.py
+Définit la structure du projet via la classe `Monred` :  
+- Configuration des agents  
+- Définition des tâches  
+- Organisation du flux de travail  
+- Assignation des outils à chaque agent (SerperDevTool, ScrapeWebsiteTool, PDFSearchTool…)
+
+## ✔️ agent.yaml
+Configure chaque agent :  
+- rôle  
+- objectifs  
+- outils  
+- comportement attendu  
+
+## ✔️ task.yaml
+Décrit les tâches exécutées par la crew :  
+- objectifs  
+- agents responsables  
+- entrées / sorties  
+- workflow séquentiel  
+
+## ✔️ main.py
+Point d’entrée du projet. Contient 4 fonctions essentielles :  
+- `run()` → lancer la crew avec un sujet donné  
+- `train()` → entraîner la crew sur plusieurs itérations  
+- `replay()` → rejouer une tâche précise  
+- `test()` → évaluer la crew  
+
+## ✔️ .env
+Contient la configuration essentielle du projet :  
+- `MODEL` → modèle Mistral via Ollama  
+- `API_BASE` → adresse de l’API Ollama  
+- `SERPER_API_KEY` → clé API pour la recherche web  
+- `OPENAI_API_KEY` → clé pour les services OpenAI  
+
 
