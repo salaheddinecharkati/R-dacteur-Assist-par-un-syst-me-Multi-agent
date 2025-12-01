@@ -1,0 +1,32 @@
+```json
+{
+  "titre_article": "LLM Trends 2025: A Deep Dive into the Future of Large Language Models",
+  "resume": "In 2025, several key large language models (LLMs) are shaping the AI landscape. Command A from Cohere, requiring only two GPUs, outperforms larger models on business tasks. Gemini 2.5, with its ‘Deep Think’ mode and multimodal capabilities, is prominent, alongside Llama 4 and Mixtral 8x22B. Claude 4’s various series offer specialized strengths.  Shakudo simplifies AI deployment within VPCs, prioritizing security, cost-effectiveness, and automation.",
+  "mots_cles": [
+    "LLM",
+    "Large Language Models",
+    "AI",
+    "Cohere",
+    "Gemini",
+    "Llama",
+    "Mixtral",
+    "Claude",
+    "Shakudo",
+    "RAG",
+    "Multimodal",
+    "2025"
+  ],
+  "url_source": [
+    "https://prajnaaiwisdom.medium.com/llm-trends-2025-a-deep-dive-into-the-future-of-large-language-models-bff23aa7cdbc",
+    "https://www.shakudo.io/blog/top-9-large-language-models",
+    "https://www.reddit.com/r/learnmachinelearning/comments/1kgk93a/how_do_you_keep_up_with_the_latest_developments/",
+    "https://www.turing.com/resources/top-llm-trends",
+    "https://arxiv.org/abs/2407.14962",
+    "https://magazine.sebastianraschka.com/p/llm-research-papers-2025-list-one",
+    "https://www.appypieagents.ai/blog/future-of-large-language-models",
+    "https://martinfowler.com/articles/2025-nature-abstraction.html",
+    "https://www.linkedin.com/top-content/technology/latest-advancements-in-technology/latest-techniques-in-llm-development/",
+    "https://tkxel.com/blog/how-large-language-models-shape-future/"
+  ]
+}
+```

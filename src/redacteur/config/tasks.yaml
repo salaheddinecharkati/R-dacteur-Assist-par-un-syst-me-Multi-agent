@@ -1,0 +1,51 @@
+Search_task:
+  description: >
+    Rechercher des articles récents sur {topic} en utilisant SerperDevTool.
+    Retourner une liste de 10 URLs pertinentes.
+  expected_output: >
+    Une liste de 10 URLs d'articles.
+  agent: WebSite_Searcher
+  max_iterations: 1
+
+Scraping_task:
+  description: >
+    Extraire le contenu principal de l'article depuis l'URL obtenue.
+  expected_output: >
+    Le texte nettoyé de l'article.
+  agent: WebSite_Scraper
+  tool_input:
+    url: "{{Search_task.output.0}}"
+
+PDF_Comparing_task:
+  description: >
+    Comparer le contenu de l'article avec le PDF de référence.
+    Retourner des extraits pertinents sous forme de liste
+    (texte + numéro de page).
+  expected_output: >
+    Une liste d'extraits pertinents du PDF, au format JSON.
+  agent: Pdf_comparer
+  tool_input:
+    article_content: "{{Scraping_task.output}}"
+    pdf_path: "knowledge/Energiesrenouvelables.pdf"
+
+Summary_task:
+  description: >
+    Générer un résumé strictement au format JSON.
+    Le résumé doit contenir :
+      - titre_article
+      - resume
+      - mots_cles
+      - url_source
+  expected_output: json
+  agent: summarizer_agent
+  tool_input:
+    article_content: "{{Scraping_task.output}}"
+    url_source: "{{Search_task.output.0}}"
+
+  output_format: |
+    {
+      "titre_article": "<titre>",
+      "resume": "<résumé>",
+      "mots_cles": ["<mot1>", "<mot2>", "<mot3>"],
+      "url_source": "<URL>"
+    }
